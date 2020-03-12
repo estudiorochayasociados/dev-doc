@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documentation - Rocha CMS</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="body-purple">
+<div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="branding">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                        <span class="text-highlight">Rocha</span><span class="text-bold">CMS</span>
+                    </a>
+                </h1>
+            </div><!--//branding-->
+        </div><!--//container-->
+    </header><!--//header-->
+    <div class="doc-wrapper">
+        <div class="container">
+            <div id="doc-header" class="doc-header text-center">
+                <h1 class="doc-title"><span aria-hidden="true" class="icon icon_lifesaver"></span> DOCs</h1>
+                <div class="meta"><i class="far fa-clock"></i> Última actualización: Febrero 28, 2020</div>
+            </div><!--//doc-header-->
+            <div class="doc-body row">
+                <div class="doc-content col-md-9 col-12 order-1">
+                    <div class="content-inner">
+                        <section id="estructura" class="doc-section">
+                            <h2 class="section-title">Estructura</h2>
+
+                            <div id="estructura-carpetas" class="section-block">
+                                <h3 class="block-title">Carpetas</h3>
+                                <h3 class="question"><i class="fas fa-folder"></i> admin</h3>
+                                <h3 class="question"><i class="fas fa-folder"></i> api</h3>
+                                <h3 class="question"><i class="fas fa-folder"></i> assets</h3>
+                                <h3 class="question"><i class="fas fa-folder"></i> backup</h3>
+                                <h3 class="question"><i class="fas fa-folder"></i> Clases</h3>
+                                <h3 class="question"><i class="fas fa-folder"></i> Config</h3>
+                                <h3 class="question"><i class="fas fa-folder"></i> vendor</h3>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>admin</b></h6>
+                                <div class="answer">
+                                    <p>En esta carpeta se encuentra todo lo relacionado al panel de administración, desde donde el usuario puede modificar gran parte de la web.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>api</b></h6>
+                                <div class="answer">
+                                    <p>En esta carpeta se encuentran todos los archivos php que se ejecutan en segundo plano llamados desde javascript.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>assets</b></h6>
+                                <div class="answer">
+                                    <p>En esta carpeta se encuentran 3 tipos de archivos:</p>
+                                    <ul>
+                                        <li><b>Archivos de recursos</b> (css, js, imagenes).</li>
+                                        <li><b>Archivos del layout</b>, éstos son archivos que van incluídos y se repiten en todas las páginas (header, nav, footer).</li>
+                                        <li><b>Archivos de servicios</b>, éstos son archivos js que ofrecen servicios en segundo plano (llaman a los archivos php de la carpeta api).</li>
+                                    </ul>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>backup</b></h6>
+                                <div class="answer">
+                                    <p>En esta carpeta se encuentra el sistema que realiza la copia de seguridad del sitio completo.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>Clases</b></h6>
+                                <div class="answer">
+                                    <p>En esta carpeta únicamente se encuentran todas las Clases utilizadas en el sistema.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>Config</b></h6>
+                                <div class="answer">
+                                    <p>En esta carpeta se encuentra el autoload, es el archivo que carga todas las clases y las configuraciones escenciales.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>vendor</b></h6>
+                                <div class="answer">
+                                    <p>En esta carpeta se encuentran las librerías descargadas a través de composer.</p>
+                                </div>
+                            </div><!--//section-block-->
+
+                            <hr>
+
+                            <div id="estructura-archivos" class="section-block">
+                                <h3 class="block-title">Archivos</h3>
+                                <p>Estos son archivos principales del sistema que no deberían faltar.</p>
+                                <h3 class="question"><i class="fas fa-file"></i> .htaccess</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> backup.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> carrito.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> checkout.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> composer.json</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> composer.lock</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> contacto.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> contenidos.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> feed.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> gracias.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> index.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> landing.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> login.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> nosotros.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> novedad.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> novedades.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> portfolio.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> portfolios.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> producto.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> productos.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> recuperar.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> robots.txt</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> servicio.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> servicios.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> sesion.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> sitemap.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> usuarios.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> video.php</h3>
+                                <h3 class="question"><i class="fas fa-file"></i> videos.php</h3>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>.htaccess</b></h6>
+                                <div class="answer">
+                                    <p>Es el archivo que contiene configuraciones de apache normalmente para url amigables y redirecciones.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>backup.php</b></h6>
+                                <div class="answer">
+                                    <p>Es el archivo que ejecuta las copias de seguridad del sistema completo.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>carrito.php</b></h6>
+                                <div class="answer">
+                                    <p>Es el archivo que muestra el carrito de compras.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>checkout.php</b></h6>
+                                <div class="answer">
+                                    <p>Es el archivo que muestra el proceso de compra a partir del carrito en adelante. Este archivo hace includes de los archivos que estan en la carpeta "assets/inc/checkout".</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>composer.json</b></h6>
+                                <div class="answer">
+                                    <p>Es el archivo que guarda un índice de las librerías utilizadas y que estan dentro de la carpeta vendor. Cuando se usa el comando "composer update" se instalan, actualizan y/o borran todas las librerías que figuran en este archivo.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>composer.lock</b></h6>
+                                <div class="answer">
+                                    <p>Este archivo se genera automaticamente y es un registro de las librerías instaladas y su versión exacta.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>contacto.php</b></h6>
+                                <div class="answer">
+                                    <p>Es el archivo que muestra la sección de contacto.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>contenidos.php</b></h6>
+                                <div class="answer">
+                                    <p>Es un archivo general que muestra cualquier contenido que se le indique.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>feed.php</b></h6>
+                                <div class="answer">
+                                    <p>Este archivo muestra los últimos posteos en redes sociales (se usa curator.io).</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>gracias.php</b></h6>
+                                <div class="answer">
+                                    <p>Este archivo muestra un mensaje de agradecimiento luego de enviar un formulario de landing page.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>index.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo principal de la web, es el que se muestra en el inicio.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>landing.php</b></h6>
+                                <div class="answer">
+                                    <p>Es un archivo general que muestra cualquier tipo de landing que se le indique.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>login.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que se ejecuta justo después de finalizar el carrito de compras (carrito.php). Es dónde se hace el acceso de usuario, que puede ingresar como invitado, acceder a su cuenta ó registrarse. Y luego se prosigue con la compra (archivo checkout.php).</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>nosotros.php</b></h6>
+                                <div class="answer">
+                                    <p>Es un archivo similar a contenidos.php con la diferencia que solo muestra un contenido en específico, el de nosotros o empresa.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>novedad.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra una novedad específica.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>novedades.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra todas las novedades.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>portfolio.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra un portfolio específico.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>portfolios.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra todos los portfolios.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>producto.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra un producto específico.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>productos.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra todos los productos.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>recuperar.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que se ejecuta cuando alguien apreta en "Olvide mi contraseña" en el acceso de usuarios (usuarios.php ó login.php).</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>robots.txt</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que permite o no el acceso de robots de google, etc.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>servicio.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra un servicio específico.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>servicios.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra todos los servicios.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>sesion.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra el panel de usuario cuando el usuario ya ingreso a su cuenta. Hace includes de los archivos de la carpeta "assets/inc/sesion".</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>sitemap.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que hace un mapa del sitio y se envía a google para que posicione la web.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>usuarios.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra el acceso de usuarios, tanto para acceder como para registrarse.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>video.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra un video específico.</p>
+                                </div>
+                            </div><!--//section-block-->
+                            <div class="section-block">
+                                <h6><b>videos.php</b></h6>
+                                <div class="answer">
+                                    <p>Este es el archivo que muestra todos los videos.</p>
+                                </div>
+                            </div><!--//section-block-->
+                        </section><!--//doc-section-->
+
+                        <section id="configuracion-inicial" class="doc-section">
+
+                            <h2 class="section-title">Configuración inicial</h2>
+
+                            <div class="section-block">
+                                <div class="callout-block callout-info">
+                                    <div class="icon-holder">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div><!--//icon-holder-->
+                                    <div class="content">
+                                        <h4 class="callout-title">Configuración obligatoria al comenzar un nuevo proyecto.</h4>
+                                        <p>Consta de 3 pasos.</p>
+                                    </div><!--//content-->
+                                </div><!--//callout-block-->
+                            </div>
+
+                            <div id="configuracion-inicial-paso1" class="section-block">
+                                <h3 class="block-title">Paso 1: Ruta de imágenes</h3>
+                                <div class="answer">
+                                    <p><b>Ir a la ubicación: </b>"admin/ckfinder/config.php"</p>
+                                    <p>Buscar esta línea:</p>
+                                    <pre>
+                                        <code class="language-php">
+define('URL', "https://" . $_SERVER['HTTP_HOST'] . "/dev-cms");
+                                        </code>
+                                    </pre>
+                                    <p></p>
+                                    <p>Se debe reemplazar "<b>dev-cms</b>" por el nombre del nuevo proyecto.</p>
+                                    <pre>
+                                        <code class="language-php">
+define('URL', "https://" . $_SERVER['HTTP_HOST'] . "/nuevo-proyecto");
+                                        </code>
+                                    </pre>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                            <hr>
+
+                            <div id="configuracion-inicial-paso2" class="section-block">
+                                <h3 class="block-title">Paso 2: Nombre y ruta del proyecto</h3>
+                                <div class="answer">
+                                    <p><b>Ir a la ubicación: </b>"Config/autoload.php"</p>
+                                    <p>Buscar estas líneas:</p>
+                                    <pre>
+                                        <code class="language-php">
+private static $project = '/dev-cms';
+private static $title = 'DEV CMS';<br>
+private static $titleAdmin = 'ESTUDIO ROCHA CMS';<br>
+private static $protocol = 'https';<br>
+private static $logo = '/assets/images/logo.png';
+                                        </code>
+                                    </pre>
+                                    <p></p>
+                                    <p>Se deben reemplazar <b>$project</b>, <b>$title</b> y <b>$logo</b> con datos del nuevo proyecto.</p>
+                                    <pre>
+                                        <code class="language-php">
+private static $project = '/nuevo-proyecto';
+private static $title = 'Nuevo Proyecto';<br>
+private static $titleAdmin = 'ESTUDIO ROCHA CMS';<br>
+private static $protocol = 'https';<br>
+private static $logo = '/assets/img/logo-nuevo.png';
+                                        </code>
+                                    </pre>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                            <hr>
+
+                            <div id="configuracion-inicial-paso3" class="section-block">
+                                <h3 class="block-title">Paso 3: Conexión a la Base de Datos</h3>
+                                <div class="answer">
+                                    <p><b>Ir a: </b> <a href="https://www.rocha.com/phpmyadmin" target="_blank">https://www.rocha.com/phpmyadmin</a></p>
+                                    <p>Crear una base de datos nueva para el nuevo proyecto.</p>
+                                    <p> Directamente clonar la base de datos "<b>devcms</b>" (exportar devcms e importar en la nueva base).</p>
+                                    <p><b>Ir a la ubicación: </b>"Clases/Conexion.php"</p>
+                                    <p>Buscar esta línea:</p>
+                                    <pre>
+                                       <code class="language-php">
+private $datos = array("host" => "localhost", "user" => "root", "pass" => "", "db" => "devcms");
+                                       </code>
+                                   </pre>
+                                    <p></p>
+                                    <p>Solamente se modifica el nombre de la base de datos por la nueva que acabamos de crear, ya que, todo lo demás no cambia. En este caso cambiaríamos únicamente "<b>devcms</b>".</p>
+                                    <pre>
+                                        <code class="language-php">
+private $datos = array("host" => "localhost", "user" => "root", "pass" => "", "db" => "nueva_base");
+                                        </code>
+                                    </pre>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                            <hr>
+
+                            <div id="configuracion-inicial-test" class="section-block">
+                                <h3 class="block-title">Test: Testear la configuración</h3>
+                                <div class="answer">
+                                    <p>En este punto ya deberías poder ingresar al sitio https://www.rocha.com/<b>nuevo-proyecto</b> y debería cargar sin problemas.</p>
+                                    <p>De lo contrario revisar todos los pasos anteriores.</p>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                        </section><!--//doc-section-->
+
+                        <section id="codigo" class="doc-section">
+
+                            <h2 class="section-title">Entendiendo el código</h2>
+
+                            <div id="codigo-estructura" class="section-block">
+                                <h3 class="block-title">Estructura del código de un archivo</h3>
+                                <div class="answer">
+                                    <p>No todos los archivos tienen la misma estructura, pero en general y los utilizados comunmente tienen una estructura similar.</p>
+                                    <pre>
+                                        <code class="language-php">
+archivo.php
+
+{ LOGICA }
+
+{ ENCABEZADO }
+
+{ CUERPO }
+
+{ PIE }
+
+{ SCRIPTS }
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+
+                            <div class="section-block">
+                                <h6><b>Lógica</b></h6>
+                                <div class="answer">
+                                    <p>La lógica es el fragmento de código PHP en el comienzo del archivo. Todo lo que tenga que ver con declaraciones de variables, peticiones a la base de datos y peticiones HTTP va en esta sección. La idea es dejar todas las variables listas para ser mostradas en el cuerpo.</p>
+                                </div>
+                            </div>
+
+                            <div class="section-block">
+                                <h6><b>Encabezado</b></h6>
+                                <div class="answer">
+                                    <p>El encabezado es una línea de código PHP al final de la <b>lógica</b> que hace un include de todos los archivos que se repiten en todas las páginas tales como estilos css, logo, barra de navegación, entre otros elementos que conforman el encabezado. La idea de ésto es tener todos los elementos que conforman el encabezado aislados y que se incluyan en cada página, de manera que si hay que realizar un cambio en el encabezado, se haga en esos elementos aislados y los cambios se reflejen en todos los archivos que los tengan incluídos, evitando modificar página por página.</p>
+                                </div>
+                            </div>
+
+                            <div class="section-block">
+                                <h6><b>Cuerpo</b></h6>
+                                <div class="answer">
+                                    <p>El cuerpo es el contenido del archivo y es lenguaje HTML. También contiene código PHP, pero relacionado a iterar y mostrar datos como <code>foreach</code> o <code>if</code>. La idea es mantener la menor cantidad de código PHP mezclado con HTML, por eso todo cálculo o lógica debe ir justamente en la parte de <b>lógica</b> para que el cuerpo solo realice la tarea de mostrar el dato.</p>
+                                </div>
+                            </div>
+
+                            <div class="section-block">
+                                <h6><b>Pie</b></h6>
+                                <div class="answer">
+                                    <p>El pie es exactamente lo mismo que el <b>encabezado</b>, con la diferencia que éste carga los elementos de la parte inferior de la página.</p>
+                                </div>
+                            </div>
+
+                            <div class="section-block">
+                                <h6><b>Scripts</b></h6>
+                                <div class="answer">
+                                    <p>Esta sección no siempre existe, generalmente se usan scripts cuando se trata de alguna funcionalidad muy puntual que aplica solo a ese archivo en específico. Siempre va debajo del <b>pie</b>.</p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div id="codigo-desglose-logica" class="section-block">
+                                <h3 class="block-title">Desglosando: lógica</h3>
+                                <div class="answer">
+                                    <h6><b>Ejemplo: index.php</b></h6>
+                                    <p>El siguiente fragmento corresponde a la <b>lógica</b>:</p>
+                                    <pre>
+                                        <code class="language-php">
+require_once "Config/Autoload.php";
+Config\Autoload::runSitio();
+
+$template = new Clases\TemplateSite();
+$f = new Clases\PublicFunction();
+$productos = new Clases\Productos();
+$sliders = new Clases\Sliders();
+$galerias = new Clases\Galerias();
+$novedades = new Clases\Novedades();
+
+#List de productos
+$productosData = $productos->list('', 'RAND()', '0,8');
+
+#List de novedades
+$novedadesData = $novedades->list('', '', '0,3');
+
+#List de sliders
+$slidersData = $sliders->list('', '', '');
+
+#View de marcas
+$galerias->set("cod", "b5d5afa703");
+$galeriasData = $galerias->view();
+
+#Información de cabecera
+$template->set("title", TITULO);
+$template->set("description", TITULO." San Francisco y Zona.");
+$template->set("keywords", "devcms san francisco, devcms cordoba, devcms san francisco");
+                                        </code>
+                                    </pre>
+                                    <h3 class="block-title">Explicación:</h3>
+                                    <p>En primer lugar se importa el <b>Autoload.php</b> y se ejecuta el método <code>runSitio()</code> que carga las variables y configuraciones globales:</p>
+                                    <pre>
+                                        <code class="language-php">
+require_once "Config/Autoload.php";
+Config\Autoload::runSitio();
+                                        </code>
+                                    </pre>
+                                    <p>En segundo lugar se instancian todas las clases necesarias en el archivo:</p>
+                                    <pre>
+                                        <code class="language-php">
+$template = new Clases\TemplateSite();
+$f = new Clases\PublicFunction();
+$productos = new Clases\Productos();
+$sliders = new Clases\Sliders();
+$galerias = new Clases\Galerias();
+$novedades = new Clases\Novedades();
+                                        </code>
+                                    </pre>
+                                    <p>En tercer lugar se declara toda la lógica del archivo, como declaraciones de variables, listados de productos, novedades, sliders, etc., filtros y cualquier otro tipo de lógica necesaria:</p>
+                                    <pre>
+                                        <code class="language-php">
+#List de productos
+$productosData = $productos->list('', 'RAND()', '0,8');
+
+#List de novedades
+$novedadesData = $novedades->list('', '', '0,3');
+
+#List de sliders
+$slidersData = $sliders->list('', '', '');
+
+#View de marcas
+$galerias->set("cod", "b5d5afa703");
+$galeriasData = $galerias->view();
+                                        </code>
+                                    </pre>
+                                    <p>Y por último se declaran los metadatos (importantes para el posicionamiento SEO):</p>
+                                    <pre>
+                                        <code class="language-php">
+#Información de cabecera
+$template->set("title", TITULO);
+$template->set("description", TITULO." San Francisco y Zona.");
+$template->set("keywords", "devcms san francisco, devcms cordoba, devcms san francisco");
+                                        </code>
+                                    </pre>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                            <hr>
+
+                            <div id="codigo-desglose-cuerpo" class="section-block">
+                                <h3 class="block-title">Desglosando: cuerpo</h3>
+                                <div class="answer">
+                                    <h6><b>Ejemplo: index.php</b></h6>
+                                    <p>El siguiente fragmento corresponde al <b>cuerpo</b>:</p>
+                                    <pre>
+                                        <code class="language-php">
+                                            ...
+&lt;div class="news-grids"&gt;
+    &lt;?php foreach ($novedadesData as $novedadItem) {
+        $img = isset($novedad['images'][0]['ruta']) ? $novedad['images'][0]['ruta'] : 'assets/archivos/sin_img.jpg';
+        $img = URL . '/' . $img;
+        $fecha = ucfirst(strftime("%u de %B de %Y", strtotime($novedadItem['data']['fecha'])));
+        $titulo = $f-&gt;normalizar_link($novedadItem['data']["titulo"]);
+        $cod = $novedadItem['data']['cod'];
+        $link = URL . '/novedad/' . $titulo . '/' . $cod;
+    ?&gt;
+        &lt;div class="grid"&gt;
+            &lt;a href="&lt;?=$link?&gt;"&gt;
+                &lt;div class="entry-media" style="background: url(&lt;?= $img ?&gt;)center/cover no-repeat; height: 300px;"&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+            &lt;div class="entry-details"&gt;
+                &lt;div class="entry-meta"&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;i class="fa fa-clock-o"&gt;&lt;/i&gt;&lt;?= $fecha ?&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="entry-body"&gt;
+                    &lt;h3 class="title-blog-overflow"&gt;
+                        &lt;a href="&lt;?=$link?&gt;"&gt;&lt;?= mb_substr($titulo, 0, 60) ?&gt;&lt;/a&gt;
+                    &lt;/h3&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;?php } ?&gt;
+&lt;/div&gt;
+                                            ...
+                                        </code>
+                                    </pre>
+                                    <h3 class="block-title">Explicación:</h3>
+                                    <p>Acá tenemos un código HTML mezclado con PHP. Este fragmento en específico pertenece a una sección que muestra novedades.</p>
+                                    <p>Todo está contenido dentro de <code>&lt;div class="news-grids"&gt;</code>.</p>
+                                    <p>Y dentro hay un <code>foreach()</code> que recorre el array de novedades <code>$novedadesData</code> que fue declarado en la <b>lógica</b>.</p>
+                                    <p>Cada elemento del array es una novedad, la cual está contenida dentro de <code>&lt;div class="grid"&gt;</code></p>
+                                    <p>Por lo tanto, en cada iteración del <code>foreach()</code> se mostrará un nuevo <code>&lt;div class="grid"&gt;</code> y así cuando el usuario mire la página, va a ver tantas novedades como contenga el array.</p>
+                                    <p><b>Aclaración: </b>la lógica dentro del <code>foreach()</code> tiene que ir en ese lugar porque en cada iteración se realiza una operación.</p>
+                                    <pre>
+                                        <code class="language-php">
+$img = isset($novedad['images'][0]['ruta']) ? $novedad['images'][0]['ruta'] : 'assets/archivos/sin_img.jpg';
+$img = URL . '/' . $img;
+$fecha = ucfirst(strftime("%u de %B de %Y", strtotime($novedadItem['data']['fecha'])));
+$titulo = $f-&gt;normalizar_link($novedadItem['data']["titulo"]);
+$cod = $novedadItem['data']['cod'];
+$link = URL . '/novedad/' . $titulo . '/' . $cod;
+                                        </code>
+                                    </pre>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                            <hr>
+
+                            <div id="codigo-desglose-enc-pie" class="section-block">
+                                <h3 class="block-title">Desglosando: encabezado y pie</h3>
+                                <div class="answer">
+                                    <h6><b>Ejemplo: index.php</b></h6>
+                                    <p>El siguiente fragmento corresponde al <b>encabezado</b>:</p>
+                                    <pre>
+                                        <code class="language-php">
+                                            ..lógica..
+$template->themeInit();
+                                            ..cuerpo..
+                                        </code>
+                                    </pre>
+                                    <p>El siguiente fragmento corresponde al <b>pie</b>:</p>
+                                    <pre>
+                                        <code class="language-php">
+                                            ..cuerpo..
+$template->themeEnd();
+                                            ..scripts..
+                                        </code>
+                                    </pre>
+                                    <h3 class="block-title">Explicación:</h3>
+                                    <p>Ambas líneas tienen el mismo proposito de incluir tanto la parte superior como inferior. La línea del encabezado va justo al final de la <b>lógica</b> y al inicio del <b>cuerpo</b> y la línea del pie va justo al final del <b>cuerpo</b>.</p>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                            <hr>
+
+                            <div id="codigo-desglose-scripts" class="section-block">
+                                <h3 class="block-title">Desglosando: scripts</h3>
+                                <div class="answer">
+                                    <h6><b>Ejemplo: feed.php</b></h6>
+                                    <p>El siguiente fragmento corresponde a un <b>script</b>:</p>
+                                    <pre>
+                                        <code class="language-php">
+&lt;script&gt;
+    function traducir() {
+        try {
+            document.getElementsByClassName('crt-load-more')[0].children[0].innerText = 'Cargar más';
+        } catch (err) {
+            setTimeout(traducir, 1000);
+        }
+    }
+    traducir();
+&lt;/script&gt;
+                                        </code>
+                                    </pre>
+                                    <h3 class="block-title">Explicación:</h3>
+                                    <p>Un archivo puede tener ninguno o varios scripts, dependiendo de la pagina y su funcionalidad. Este fragmento va siempre debajo del pie. Generalmente se usan scripts de esta forma para un propósito muy puntual. En este caso ese fragmento traduce una frase de ingles a español.</p>
+                                </div><!--//anwser-->
+                            </div><!--//section-block-->
+
+                        </section><!--//doc-section-->
+
+                        <section id="ecommerce" class="doc-section">
+
+                            <h2 class="section-title">Ecommerce</h2>
+
+                            <div id="ecommerce-flujo-diagrama" class="section-block">
+                                <h3 class="block-title">Diagrama de flujo</h3>
+                                <div class="answer">
+                                    <img src="assets/images/flujo-ecommerce.png" width="100%">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div id="ecommerce-flujo-codigo" class="section-block">
+                                <h3 class="block-title">Flujo del código</h3>
+                                <div class="answer">
+                                    <p><i class="fas fa-thumbtack"></i> Todo inicia en <b>productos.php</b>, aca se listan todos los productos.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Al seleccionar un producto, se redirige a <b>producto.php</b> dónde muestra el producto seleccionado y da la opción de agregar al carrito.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Una vez que se agrega el producto al carrito, nos dirigimos al carrito (<b>carrito.php</b>) y nos muestra todos los productos que tengamos agregados.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Acá tenemos la opción de finalizar el carrito, lo que nos redirige a <b>login.php</b></p>
+                                    <p><i class="fas fa-thumbtack"></i> En <b>login.php</b> se revisa si la persona que esta comprando esta logueada en su cuenta o si esta comprando sin cuenta.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Si esta logueada en su cuenta, se redirige al checkout (<b>checkout.php</b>)</p>
+                                    <p><i class="fas fa-thumbtack"></i> En el caso de que esté comprando sin cuenta, es necesario identificar a la persona y van a mostrarse 3 opciones:</p>
+                                    <p><b>Invitado: </b>al elegir invitado se sigue con la compra con una sesión temporal que caduca al finalizar la mísma.</p>
+                                    <p><b>Acceder: </b>al elegir acceder el usuario ingresa su email y contraseña y accede a su cuenta. Y continúa la compra con su cuenta.</p>
+                                    <p><b>Registrarse: </b>al elegir registrarse el usuario ingresa todos sus datos y se crea su nueva cuenta. Al crearse, automaticamente se accede a la mísma y el usuario continúa la compra con la nueva cuenta.</p>
+                                    <p><b>ACLARACIÓN: </b>las formas de comprar son 2, como usuario invitado o como usuario registrado. Eligiendo tanto acceder como registrarse, ambos son usuarios registrados.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Ahora que ya se identificó a la persona, se redirige al checkout (<b>checkout.php</b>)</p>
+                                    <p><i class="fas fa-thumbtack"></i> En el checkout hay 4 pasos: <b>shipping</b>, <b>billing</b>, <b>payment</b> y <b>detail</b></p>
+                                    <p><i class="fas fa-thumbtack"></i> La ubicación de estos 4 archivos se encuentra en la carpeta: <b>assets/inc/checkout</b></p>
+                                    <p><i class="fas fa-thumbtack"></i> Éstos 4 son archivos que se incluyen en el checkout según se avance la compra. En otras palabras, checkout es una plantilla y dentro muestra a alguno de los 4 archivos encerrados en esa plantilla. Por eso, nunca se llama directamente a uno de estos archivos, sino que se llama siempre a <b>checkout.php</b> indicandole cual de los 4 mostrar.</p>
+                                    <p><i class="fas fa-thumbtack"></i> <code>https://rocha.com/dev-cms/checkout/shipping</code></p>
+                                    <p><i class="fas fa-thumbtack"></i> <code>https://rocha.com/dev-cms/checkout/billing</code></p>
+                                    <p><i class="fas fa-thumbtack"></i> <code>https://rocha.com/dev-cms/checkout/payments</code></p>
+                                    <p><i class="fas fa-thumbtack"></i> <code>https://rocha.com/dev-cms/checkout/detail</code></p>
+                                    <p><i class="fas fa-thumbtack"></i> En las 4 líneas anteriores estamos accediendo a checkout indicandole que archivo mostrar.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Retomando, el primer paso después de pasar por <b>login.php</b> es <b>shipping</b>, al cual se redirige automaticamente.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Una vez dentro de shipping se elige el metodo de envio y se completa el formulario con los datos a donde se enviara el producto.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Cuando ya está todo completado se apreta en el boton de <b>siguiente paso</b>. Acá lo que se hace en segundo plano antes de redirigir al siguiente paso es enviar los datos completados a <b>assets/js/services/checkout.js</b> y de ahí se envían a <b>api/stages/stage-1.php</b></p>
+                                    <p><i class="fas fa-thumbtack"></i> En <b>api/stages/stage-1.php</b> se guardan los datos de envío, y en caso de que el usuario sea invitado, se toman estos datos como datos personales de su sesión.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Una vez que todas estas tareas en segundo plano se ejecutaron con éxito, se redirige al siguiente paso <b>billing</b>.</p>
+                                    <p><i class="fas fa-thumbtack"></i> En <b>billing</b> lo único que se hace es completar el dni/cuil/cuit y seleccionar si se requiere factura A ó no. Los demás datos los toma automaticamente del formulario de <b>shipping</b>. Aunque en caso de tener una dirección de facturación distinta a la de dónde se enviará el producto se puede modificar.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Se presiona nuevamente en <b>siguiente paso</b> y vuelven a realizarse tareas en segundo plano antes de redirigir al siguiente paso.</p>
+                                    <p><i class="fas fa-thumbtack"></i> El proceso es similar al de <b>shipping</b>, primero se envía el formulario a <b>assets/js/services/checkout.js</b> y de ahí se envía a <b>api/stages/stage-2.php</b> el cual guarda los datos.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Una vez que todas estas tareas en segundo plano se ejecutaron con éxito, se redirige al siguiente paso <b>payments</b>.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Ahora dentro de <b>payments</b> se selecciona el metodo de pago y se presiona en <b>finalizar compra</b>.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Nuevamente se realizan tareas en segundo plano similar a <b>shipping</b> y <b>billing</b>. Se envía el método elegido a <b>assets/js/services/checkout.js</b> y de ahí se envía a <b>api/stages/stage-3.php</b> el cual guarda los datos.</p>
+                                    <p><i class="fas fa-thumbtack"></i> Y una vez termina esta tarea en segundo plano. Se realiza otra tarea en segundo plano que es la de enviar el email con el detalle de la compra, para esto se ejecuta <b>assets/js/services/email.js</b> el cual contiene una función llamada <code>sendBuy()</code> que realiza el envio con todos los datos que fuimos almacenando. </p>
+                                    <p><i class="fas fa-thumbtack"></i> Ahora si, ya terminadas todas estas tareas en segundo plano, se redirige al ultimo paso del checkout <b>detail</b> que muestra el detalle de la compra. </p>
+                                    <p><i class="fas fa-thumbtack"></i> En este ultimo paso se verifica si el usuario es invitado o registrado, en caso de ser invitado, le borra la sesión, ya que solamente tenía validez durante la compra. En caso de ser un usuario registrado no se hace nada con la sesión. </p>
+                                </div>
+                            </div>
+                        </section><!--//doc-section-->
+
+                        <section id="dudas" class="doc-section">
+
+                            <h2 class="section-title">Dudas Puntuales</h2>
+
+                            <div id="dudas-htaccess" class="section-block">
+                                <h3 class="block-title">.htaccess</h3>
+                                <div class="answer">
+                                    <p>Este archivo como está explicado en <a href="#estructura-archivos">Estructura de archivos</a> es el que maneja todas las configuraciones de Apache.</p>
+                                    <p>Entre todas las configuraciones que se puede hacer, solamente voy a destacar 2 que son las básicas en todo sitio.</p>
+                                    <p>Éstas son configuraciones de redirección y configuraciones de url amigables.</p>
+                                    <h6><b>Configuración de Redirecciones</b></h6>
+                                    <pre>
+                                        <code class="language-php">
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+                                        </code>
+                                    </pre>
+                                    <p>Estas 6 líneas lo que hacen es redirigir a <b>www</b> y a <b>https</b></p>
+                                    <h6><b>Redirección www</b></h6>
+                                    <pre>
+                                        <code class="language-php">
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+                                        </code>
+                                    </pre>
+                                    <p>Estas 3 líneas son las que se encargan de la redirección <b>www</b>, por ejemplo, si alguien escribiera <b>midominio.com</b> sería redirigido instantaneamente a <b>www.midominio.com</b></p>
+                                    <h6><b>Redirección https</b></h6>
+                                    <pre>
+                                        <code class="language-php">
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+                                        </code>
+                                    </pre>
+                                    <p>Estas 3 líneas son las que se encargan de la redirección <b>https</b>, por ejemplo, si alguien escribiera <b>http://www.midominio.com</b> sería redirigido instantaneamente a <b>https://www.midominio.com</b></p>
+                                    <p>Al tener ambas redirecciones hacen que, por ejemplo, si alguien escribiera <b>http://midominio.com</b> sea redirigido a <b>https://www.midominio.com</b> teniendo asi siempre la url completa.</p>
+                                    <p><b>ACLARACIÓN: </b>estas líneas de redirección solo se utilizan una vez que la página está subida a internet, mientras trabajemos en local no se utilizan porque generan conflictos.</p>
+
+                                    <hr>
+
+                                    <h6><b>Configuración de URL Amigables</b></h6>
+                                    <pre>
+                                        <code class="language-php">
+#Pestañas únicas
+RewriteRule ^inicio ./index.php
+RewriteRule ^c/(.*)$ ./contenidos.php?id=$1
+RewriteRule ^sesion(.*)/(.*)$ ./sesion.php?op=$2
+RewriteRule ^carrito/(.*)/(.*)$ ./carrito.php?metodos-pago=$2
+RewriteRule ^checkout/(.*)$ ./checkout.php?op=$1
+RewriteRule ^landing/(.*)/(.*)$ ./landing.php?cod=$2
+RewriteRule ^comunidad-digital ./feed.php
+
+#Novedades
+RewriteRule ^novedad/(.*)/(.*)$ ./novedad.php?cod=$2
+RewriteRule ^novedades/(.*)/(.*)/pagina/(.*)$ ./novedades.php?categoria=$1&subcategoria=$2&pagina=$3
+RewriteRule ^novedades/buscar=(.*)/pagina/(.*)$ ./novedades.php?buscar=$1&pagina=$2
+RewriteRule ^novedades/(.*)/pagina/(.*)$ ./novedades.php?categoria=$1&pagina=$2
+RewriteRule ^novedades/pagina/(.*)$ ./novedades.php?pagina=$1
+RewriteRule ^novedades/(.*)/(.*)$ ./novedades.php?categoria=$1&subcategoria=$2
+RewriteRule ^novedades/buscar=(.*)$ ./novedades.php?buscar=$1
+RewriteRule ^novedades/(.*)$ ./novedades.php?categoria=$1
+RewriteRule ^novedades(.*)/$ ./novedades.php
+                                        </code>
+                                    </pre>
+                                    <p>Estas son algunas de las líneas que conforman las url amigables. Lo que hacen es sobreescribir la url para que sea más legible para una persona normal.</p>
+                                    <p>La idea es que si tenemos una url, por ejemplo:</p>
+                                    <p><code>https://www.midominio.com/checkout.php?op=shipping</code></p>
+                                    <p>Nos quede en algo más simple y legible:</p>
+                                    <p><code>https://www.midominio.com/checkout/shipping</code></p>
+                                    <p>Si analizamos este fragmento del código anterior:</p>
+                                    <pre>
+                                        <code class="language-php">
+#Novedades
+RewriteRule ^novedad/(.*)/(.*)$ ./novedad.php?cod=$2
+                                        </code>
+                                    </pre>
+                                    <p>Esa línea se puede dividir en 3 partes:</p>
+                                    <p><i class="fas fa-thumbtack"></i> Primeramente tenemos la instrucción <code>RewriteRule</code> lo que indica es que se va a sobreescribir y redirigir.</p>
+                                    <p><i class="fas fa-thumbtack"></i> En segundo lugar tenemos el patrón que se va a sobreescribir <code>^novedad/(.*)/(.*)$</code>. Este patrón debe ser escrito como una <b>expresión regular</b></p>
+                                    <p><b>Explicación: </b></p>
+                                    <p>Con <b>^</b> iniciamos el patrón</p>
+                                    <p>Con <b>novedad/</b> indicamos con que frase comienza</p>
+                                    <p>Con <b>(.*)</b> indicamos que puede ser cualquier palabra o frase</p>
+                                    <p>Con <b>$</b> indicamos el final del patrón</p>
+                                    <p>Con cada <b>/</b> indicamos que después viene un parámetro</p>
+                                    <p><i class="fas fa-thumbtack"></i> Y en tercer lugar tenemos la url a la que se va a redirigir <code>./novedad.php?cod=$2</code></p>
+                                    <p><b>Explicación: </b></p>
+                                    <p>Con <b>./</b> indicamos que busque en la raíz</p>
+                                    <p>Con <b>novedad.php</b> indicamos que busque ese archivo</p>
+                                    <p>Con <b>?cod=$2</b> indicamos que el parametro <b>cod</b> sera el segundo parámetro del patrón</p>
+                                    <p>Pasandolo a un ejemplo real, este código sobreescribiría una url de esto:</p>
+                                    <p><code>https://www.midominio.com/novedad.php?titulo=el-precio-de-la-nafta-sube-en-enero&cod=daf23fa8ik</code></p>
+                                    <p>A esto:</p>
+                                    <p><code>https://www.midominio.com/novedad/el-precio-de-la-nafta-sube-en-enero/daf23fa8ik</code></p>
+                                    <p><b>ACLARACIÓN: </b>el .htaccess ya está configurado con todas las url amigables necesarias, no modificar nada a menos que sea muy necesario y particular.</p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div id="dudas-sitemap" class="section-block">
+                                <h3 class="block-title">Sitemap</h3>
+                                <div class="answer">
+                                    <p>Este archivo como está explicado en <a href="#estructura-archivos">Estructura de archivos</a> es el que hace un mapa del sitio.</p>
+                                    <h6><b>Ejemplo de como se ve:</b></h6>
+                                    <code>
+                                        https://rocha.com/dev-cms/novedad/weg-adquiere-planta-de-transformadores-en-brasil/a9e7ad51fb2020-02-06weekly0.8https://rocha.com/dev-cms/novedad/weg-moderniza-sistema-de-accionamiento-de-puente-grua-portuaria-en-los-paises-bajos/b8e0219a122020-02-06weekly0.8https://rocha.com/dev-cms/novedad/weg-participa-en-mision-comercial-en-india/ab79b03d3c2020-02-06weekly0.8https://rocha.com/dev-cms/novedad/weg-participa-en-la-modernizacion-de-refineria-en-la-ciudad-de-talara-en-peru/6f3840f6e92020-02-06weekly0.8https://rocha.com/dev-cms/producto/csw---mando-y-senalizacion-csw/93c4c1862e2020-02-06weekly0.8https://rocha.com/dev-cms/producto/soft-starter-ssw-06-ssw06/a41d14e5852020-02-06weekly0.8https://rocha.com/dev-cms/producto/soft-starter-ssw-07-ssw07/a47afbe9e02020-02-06weekly0.8https://rocha.com/dev-cms/producto/soft-starter-ssw-05-ssw05/fb2efa36ef2020-02-06weekly0.8https://rocha.com/dev-cms/producto/cfw300-cfw300/408b4265c52020-02-06weekly0.8https://rocha.com/dev-cms/producto/cfw11-system-drive-cfw11/33349886352020-02-06weekly0.8https://rocha.com/dev-cms/producto/cfw700-general-purpose-drive-cfw700/db529960522020-02-06weekly0.8https://rocha.com/dev-cms/producto/cfw500-machinery-drive-cfw500/6f371772332020-02-06weekly0.8https://rocha.com/dev-cms/producto/cfw10-easy-drive-cfw10/9ecd6b59352020-02-06weekly0.8https://rocha.com/dev-cms/producto/cfw100-mini-drive-cfw100/3569347b8f2020-02-06weekly0.8https://rocha.com/dev-cms/producto/monofasicos-nema-48-y-56-uso-general-ip21-nema/ecf0cd10692020-02-06weekly0.8https://rocha.com/dev-cms/producto/w21---carcasa-de-aluminio---standard-efficiency---ie1/8cbf7190402020-02-06weekly0.8https://rocha.com/dev-cms/producto/w22-carcasa-de-hierro-gris---premium-efficiency---ie3-ie3/2e670e29992020-02-06weekly0.8https://rocha.com/dev-cms/producto/w22-carcasa-de-hierro-gris---premium-efficiency---ie3-ie3/90d69e77422020-02-06weekly0.8https://rocha.com/dev-cms/producto/w22-carcasa-de-hierro-gris---high-efficiency---ie2-ie2/81a4b6de2b2020-02-06weekly0.8https://rocha.com/dev-cms/producto/w22-carcasa-de-hierro-gris---standard-efficiency---ie1/56171677432020-02-06weekly0.8https://rocha.com/dev-cms/c/e3770a3af22020-02-28weekly0.8https://rocha.com/dev-cms/sesion2020-02-28weekly1https://rocha.com/dev-cms/productos2020-02-28weekly1https://rocha.com/dev-cms/empresa2020-02-28weekly1https://rocha.com/dev-cms/novedades2020-02-28weekly1https://rocha.com/dev-cms/contacto2020-02-28weekly1
+                                    </code>
+                                    <p></p>
+                                    <p>La idea es que sea un archivo lleno de urls que accedan a cada parte del sitio.</p>
+                                    <p>Esto siempre se exporta en formato <b>XML</b></p>
+                                    <p>Si nos fijamos en <b>sitemap.php</b> lo que hace este archivo es primero declarar la variable <code>$xml</code></p>
+                                    <pre>
+                                        <code class="language-php">
+$xml = '&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;';
+                                        </code>
+                                    </pre>
+                                    <p>Y después vamos concatenando código en cada <code>foreach()</code> a la mísma variable <code>$xml</code></p>
+                                    <pre>
+                                        <code class="language-php">
+                                            ...
+foreach ($novedades->list("","","") as $novedadItem) {
+    $cod = $novedadItem["data"]["cod"];
+    $titulo = $f->normalizar_link($novedadItem["data"]["titulo"]);
+    $xml .= '&lt;url&gt;&lt;loc&gt;'.URL.'/novedad/'.$titulo.'/'.$cod.'&lt;/loc&gt;&lt;lastmod&gt;'.$novedadItem["data"]["fecha"].'&lt;/lastmod&gt;&lt;changefreq&gt;weekly&lt;/changefreq&gt;&lt;priority&gt;0.8&lt;/priority&gt;&lt;/url&gt;';
+                                            ...
+                                        </code>
+                                    </pre>
+                                    <p>Todo esto que se va concatenando en la variable <code>$xml</code> es código XML</p>
+                                    <p>Una vez que se ejecutan todos los <code>foreach()</code> y se termina de concatenar todo el código, se ejecuta lo siguiente:</p>
+                                    <pre>
+                                        <code class="language-php">
+header("Content-Type: text/xml;");
+echo $xml;
+                                        </code>
+                                    </pre>
+                                    <p>Esto lo que hace es indicar que el tipo de archivo se lea como si fuera un documento XML y luego se imprime la variable con todo el código xml. Y se ve como en el ejemplo del principio.</p>
+                                </div>
+                            </div>
+
+                        </section><!--//doc-section-->
+                    </div><!--//content-inner-->
+                </div><!--//doc-content-->
+                <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                    <div id="doc-nav" class="doc-nav">
+                        <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                            <a class="nav-link scrollto" href="#estructura">Estructura</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#estructura-carpetas">Carpetas</a>
+                                <a class="nav-link scrollto" href="#estructura-archivos">Archivos</a>
+                            </nav>
+                            <a class="nav-link scrollto" href="#configuracion-inicial">Configuración inicial</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#configuracion-inicial-paso1">Paso 1</a>
+                                <a class="nav-link scrollto" href="#configuracion-inicial-paso2">Paso 2</a>
+                                <a class="nav-link scrollto" href="#configuracion-inicial-paso3">Paso 3</a>
+                                <a class="nav-link scrollto" href="#configuracion-inicial-test">Test</a>
+                            </nav>
+                            <a class="nav-link scrollto" href="#codigo">Entendiendo el código</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#codigo-estructura">Estructura</a>
+                                <a class="nav-link scrollto" href="#codigo-desglose-logica">Desglose: lógica</a>
+                                <a class="nav-link scrollto" href="#codigo-desglose-cuerpo">Desglose: cuerpo</a>
+                                <a class="nav-link scrollto" href="#codigo-desglose-enc-pie">Desglose: encabezado y pie</a>
+                                <a class="nav-link scrollto" href="#codigo-desglose-scripts">Desglose: scripts</a>
+                            </nav>
+                            <a class="nav-link scrollto" href="#ecommerce">Ecommerce</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#ecommerce-flujo-diagrama">Diagrama de flujo</a>
+                                <a class="nav-link scrollto" href="#ecommerce-flujo-codigo">Flujo del código</a>
+                            </nav>
+                            <a class="nav-link scrollto" href="#dudas">Dudas puntuales</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#dudas-htaccess">.htaccess</a>
+                                <a class="nav-link scrollto" href="#dudas-sitemap">Sitemap</a>
+                            </nav>
+                        </nav><!--//doc-menu-->
+                    </div>
+                </div><!--//doc-sidebar-->
+            </div><!--//doc-body-->
+        </div><!--//container-->
+    </div><!--//doc-wrapper-->
+
+</div><!--//page-wrapper-->
+
+<footer id="footer" class="footer text-center">
+    <div class="container">
+        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+        <small class="copyright">Documentación Rocha CMS</small>
+
+    </div><!--//container-->
+</footer><!--//footer-->
+
+
+<!-- Main Javascript -->
+<script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+<script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html> 
+
